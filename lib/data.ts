@@ -61,24 +61,17 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "TikTok",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I discuss various money-making topics on my TikTok account. Gathered an audience of 11.7k followers in a matter of years.",
+    tags: ["Trading", "Cars", "Money", "Success", "Hard Work"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Instagram",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I post various types of content on Instagram. Gathered an audience of 17.4k followers in a matter of years.",
+    tags: ["Trading", "Cars", "Money", "Success", "Hard Work"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
