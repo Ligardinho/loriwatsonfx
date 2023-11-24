@@ -79,12 +79,12 @@ export const projectsData = [
 export const skillsData = [
   "Crypto Trading",
   "Forex Trading",
-  "Entrepeneur",
+  "Entrepreneur",
   "Leader",
   "Content Creation",
   "Coaching",
   "Course Creator",
   "Influencer",
-  "Invester",
+  "Investor",
   "Car Enthusiast",
 ] as const;
