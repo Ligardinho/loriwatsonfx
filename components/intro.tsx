@@ -33,7 +33,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/123.png"
+              src="/loriwatson_fx_1691821894_3167554094092313654_1914346842.png"
               alt="Ricardo portrait"
               width="192"
               height="192"
