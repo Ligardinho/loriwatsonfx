@@ -3,7 +3,7 @@ import Script from 'next/script';
 const BotpressWebchat = () => {
   return (
     <>
-      <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" strategy="beforeInteractive" />
+      <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" strategy="beforeInteractive" defer/>
       <Script strategy="afterInteractive">
         {`
           window.botpressWebChat.init({
