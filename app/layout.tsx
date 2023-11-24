@@ -32,7 +32,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
-            <BotChatComponent/>
+            <BotChatComponent defer/>
             <Footer />
 
             <Toaster position="top-right" />
