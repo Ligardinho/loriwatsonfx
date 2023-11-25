@@ -63,14 +63,14 @@ export const projectsData = [
   {
     title: "TikTok",
     description:
-      "I discuss various money-making topics on my TikTok account. Gathered an audience of 11.7k followers in a matter of years.",
+      "I discuss various money-making topics on my TikTok account. Gathered an audience of thousands of followers in a matter of years.",
     tags: ["Trading", "Cars", "Money", "Success", "Hard Work"],
     imageUrl: corpcommentImg,
   },
   {
     title: "Instagram",
     description:
-      "I post various types of content on Instagram. Gathered an audience of 17.4k followers in a matter of years.",
+      "I post various types of content on Instagram. Gathered an audience of thousands of followers in a matter of years.",
     tags: ["Trading", "Cars", "Money", "Success", "Hard Work"],
     imageUrl: wordanalyticsImg,
   },
