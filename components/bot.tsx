@@ -3,8 +3,8 @@ import Script from 'next/script';
 const BotpressWebchat = () => {
   return (
     <>
-      <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" strategy="beforeInteractive" />
-      <Script strategy="afterInteractive">
+      <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" strategy="beforeInteractive" id="chatbot"/>
+      <Script strategy="afterInteractive" id="chabot">
         {`
           window.botpressWebChat.init({
             "composerPlaceholder": "Say \\"hi\\" to Violet",
