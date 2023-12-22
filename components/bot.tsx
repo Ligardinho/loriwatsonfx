@@ -1,32 +1,28 @@
 import Script from 'next/script';
+import React from 'react';
 
-const BotpressWebchat = () => {
+const YourComponent = () => {
   return (
     <>
-      <Script src="https://cdn.botpress.cloud/webchat/v1/inject.js" strategy="beforeInteractive" id="chatbot"/>
-      <Script strategy="afterInteractive" id="chabot">
+      <Script src="https://cdn.voiceflow.com/widget/bundle.mjs" strategy="beforeInteractive" id='chatbots'/>
+      <Script strategy="afterInteractive" id='chatbot'>
         {`
-          window.botpressWebChat.init({
-            "composerPlaceholder": "Say \\"hi\\" to Violet",
-            "botConversationDescription": "Watson FX Assistant",
-            "botId": "d89bd043-3b41-4f9f-a624-90eac25216c4",
-            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-            "messagingUrl": "https://messaging.botpress.cloud",
-            "clientId": "d89bd043-3b41-4f9f-a624-90eac25216c4",
-            "webhookId": "184fec3e-6c3a-4ffb-9f0e-5c8c0efb93ef",
-            "lazySocket": true,
-            "themeName": "prism",
-            "botName": "Violet",
-            "stylesheet": "https://webchat-styler-css.botpress.app/prod/cea87597-031b-4890-b421-dfc4b40beea1/v3019/style.css",
-            "frontendVersion": "v1",
-            "useSessionStorage": true,
-            "theme": "prism",
-            "themeColor": "#2563eb",
-          });
+          (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '656de1045061e600072a2e3c' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+          })(document, 'script');
         `}
       </Script>
+      {/* Your component content */}
     </>
   );
 };
 
-export default BotpressWebchat;
+export default YourComponent;
